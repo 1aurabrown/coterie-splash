@@ -19,7 +19,8 @@ textarea,
 select {
   font-size: 1.6rem;
   max-width: 100%;
-  border: 1px solid $color-border;
+  // border: 1px solid $color-border;
+  border: none;
   border-radius: 0;
 
   &[disabled] {

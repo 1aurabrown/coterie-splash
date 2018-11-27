@@ -1,0 +1,56 @@
+<h2 class="headline-l small--hide">{{ section.settings.cta_headline_desktop }}</h2>
+<h2 class="headline-l medium-up--hide">{{ section.settings.cta_headline_mobile }}</h2>
+<hr>
+<p>{{ section.settings.cta_copy }}</p>
+{% schema %}
+  {
+    "name": "Email Capture",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Email Form"
+      },
+      {
+        "type": "richtext",
+        "id": "cta_headline_desktop",
+        "label": "CTA Headline Desktop",
+        "default": "<p>We started from scratch<br/>to reimagine everything<br/>a diaper could be.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "cta_headline_mobile",
+        "label": "CTA Headline Mobile",
+        "default": "<p>We started<br/>from scratch<br/>to reimagine<br/>everything a<br/>diaper could be.<p/>"
+      },
+      {
+        "type": "textarea",
+        "id": "cta_copy",
+        "label": "CTA Copy",
+        "default": "Stay tuned for launch updates and special offers."
+      },
+      {
+        "type": "text",
+        "id": "placeholder",
+        "label": "Email Placeholder",
+        "default": "Your email"
+      },
+      {
+        "type": "header",
+        "content": "Confirmation"
+      },
+      {
+        "type": "textarea",
+        "id": "confirmation_headline",
+        "label": "Confirmation Headline",
+        "default": "Thank you!"
+      },
+      {
+        "type": "textarea",
+        "id": "confirmation_copy",
+        "label": "Confirmation Copy",
+        "default": "Check your email for confirmation."
+      }
+    ]
+  }
+
+{% endschema %}

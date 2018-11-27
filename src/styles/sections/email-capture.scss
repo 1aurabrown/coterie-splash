@@ -1,0 +1,20 @@
+#shopify-section-email-capture {
+  text-align: center;
+  max-width: 750px;
+  p {
+    margin: 0;
+  }
+  hr {
+    border: none;
+    background: $color-body-text;
+    height: 4px;
+    width: 32px;
+    margin: 30px auto;
+  }
+  @include media-query ($small) {
+    hr {
+      margin: 35px auto;
+    }
+  }
+
+}

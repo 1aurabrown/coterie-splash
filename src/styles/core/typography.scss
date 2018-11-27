@@ -7,6 +7,7 @@ body {
   font-weight: $font-body-weight;
   font-style: $font-body-style;
   font-size: 1.6rem;
+  color: $color-body-text;
 }
 
 h1,
@@ -16,6 +17,8 @@ h4,
 h5,
 h6 {
   font-family: $font-heading;
+  margin: 0;
+  font-weight: normal;
 }
 
 body,
@@ -30,3 +33,27 @@ select {
 a:focus {
   color: inherit;
 }
+
+@mixin headline() {
+  font-family: $font-heading;
+  text-transform: uppercase;
+}
+.headline {
+  @include headline();
+}
+.headline-l {
+  @extend .headline;
+  @include media-query($small) {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+  }
+  @include media-query($medium-up) {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+a, a:hover, a:active, a:visited {
+  color: inherit;
+}
+

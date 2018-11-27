@@ -1,16 +1,19 @@
-// Text colors
+
 $color-body-text: var(--color-body-text);
 
 // Background colors
 $color-body: var(--color-main-background);
+$color-arc: var(--color-arc-background);
+$color-footer: var(--color-footer-background);
+
+// Other colors
+$color-form: var(--color-form);
+// $color-border: var(--color-border);
+
 
 // Placeholders
 $placeholder-color-foreground: #161d25;
 $placeholder-color-background: #f9fafb;
-
-// Other colors
-$color-accent: var(--color-accent);
-$color-border: var(--color-border);
 
 // Helper colors for form error states
 $color-disabled: #000000;
@@ -21,11 +24,15 @@ $color-success: #000000;
 $color-success-bg: #000000;
 
 // Typography
-$font-heading: var(--font-heading);
-$font-body: var(--font-body);
-$font-body-weight: var(--font-body-weight);
-$font-body-style: var(--font-body-style);
-$font-body-bold-weight: var(--font-body-bold-weight);
+$font-heading: 'SangBleuSans', serif;
+$font-body: 'PostGrotesk', sans-serif;
+$font-body-weight: normal;
+$font-body-style: normal;
+$font-body-bold-weight: bold;
+
+// Footer
+$footer-height-desktop: 86px;
+$footer-height-mobile: 55px;
 
 // Transitions
 $transition-duration: 250ms;
@@ -58,3 +65,11 @@ $breakpoints: (
   $large-up '(min-width: #{$grid-large})',
   $widescreen '(min-width: #{$grid-widescreen})'
 );
+
+/*============================================================================
+  Generate breakpoint-specific column widths and push classes
+    - Default column widths: $breakpoint-has-widths: ($small, $medium-up);
+    - Default is no push classes
+    - Will not work if `styles/global/grid.scss` is removed
+==============================================================================*/
+$breakpoint-has-widths: ($small, $medium-up, $large-up);

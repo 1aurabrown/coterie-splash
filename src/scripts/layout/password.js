@@ -1,5 +1,5 @@
-import '../../styles/theme.scss.liquid';
-import '../../styles/theme.scss';
+import '../../styles/password.scss.liquid';
+import '../../styles/password.scss';
 
 import {focusHash, bindInPageLinks} from '@shopify/theme-a11y';
 import {cookiesEnabled} from '@shopify/theme-cart';
