@@ -1,6 +1,6 @@
-#shopify-section-footer footer {
-  background: black;
-  color: white;
+footer {
+  background: $color-footer;
+  color: $color-icon;
   ul {
     @include flex();
     @include plain-list();
@@ -18,7 +18,7 @@
 }
 
 @include media-query($small) {
-  #shopify-section-footer footer {
+  footer {
     ul {
       height: $footer-height-mobile;
     }
