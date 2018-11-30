@@ -1,3 +1,26 @@
-#shopify-section-footer {
+#shopify-section-footer footer {
+  background: black;
+  color: white;
+  ul {
+    @include flex();
+    @include plain-list();
+    height: $footer-height-desktop;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 25px;
+      .icon {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
 
+@include media-query($small) {
+  #shopify-section-footer footer {
+    ul {
+      height: $footer-height-mobile;
+    }
+  }
 }

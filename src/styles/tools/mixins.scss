@@ -6,6 +6,17 @@
   display: flex;
 }
 
+@mixin plain-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
 /**
  * Sets a media query for the specified breakpoint
  *
@@ -33,6 +44,24 @@
         @content;
       }
     }
+  }
+}
+
+@mixin placeholder() {
+  &::placeholder { /* Chrome/Opera/Safari */
+    @content;
+  }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @content;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
   }
 }
 

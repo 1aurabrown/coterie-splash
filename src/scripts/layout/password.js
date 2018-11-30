@@ -4,6 +4,8 @@ import '../../styles/password.scss';
 import {focusHash, bindInPageLinks} from '@shopify/theme-a11y';
 import {cookiesEnabled} from '@shopify/theme-cart';
 
+import '../templates/password.js'
+
 // Common a11y fixes
 focusHash();
 bindInPageLinks();

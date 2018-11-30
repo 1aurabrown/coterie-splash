@@ -1,3 +1,22 @@
 #shopify-section-header {
 
 }
+
+.template-password header {
+  padding: 40px;
+  img {
+    display: block;
+    width: 103px;
+    height: auto
+  }
+}
+
+@include media-query($small) {
+
+  .template-password header {
+    padding: 28px;
+    img {
+      margin: auto;
+    }
+  }
+}

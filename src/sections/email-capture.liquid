@@ -1,7 +1,28 @@
-<h2 class="headline-l small--hide">{{ section.settings.cta_headline_desktop }}</h2>
-<h2 class="headline-l medium-up--hide">{{ section.settings.cta_headline_mobile }}</h2>
-<hr>
-<p>{{ section.settings.cta_copy }}</p>
+<div class="email-capture" data-section-id="{{ section.id }}" data-section-type="email-capture" data-enable-history-state="true">
+<div class="email-capture--cta">
+  <form action="https://www.getdrip.com/forms/532461030/submissions" method="post" data-drip-embedded-form="532461030">
+
+    <h2 data-drip-attribute="headline" class="headline-l small--hide">{{ section.settings.cta_headline_desktop }}</h2>
+    <h2 data-drip-attribute="headline" class="headline-l medium-up--hide">{{ section.settings.cta_headline_mobile }}</h2>
+    <hr>
+    <p data-drip-attribute="description" class="copy">{{ section.settings.cta_copy }}</p>
+    <div class="email-capture--inputs">
+      <input class="email-capture--email" placeholder="{{ section.settings.placeholder }}" type="email" id="drip-email" name="fields[email]" value="" />
+      <button class="email-capture--submit" type="submit" data-drip-attribute="sign-up-button" >
+        {% include 'submit-arrow' %}
+      </button>
+    </div>
+  </form>
+
+</div>
+
+<div class="email-capture--success">
+  <h2 class="headline-l">{{ section.settings.confirmation_headline }}</h2>
+  <hr>
+  <p class="copy">{{ section.settings.confirmation_copy }}</p>
+</div>
+</div>
+
 {% schema %}
   {
     "name": "Email Capture",

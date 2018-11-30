@@ -2,6 +2,14 @@ form {
   margin: 0;
 }
 
+button,
+label,
+input,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
 a,
 area,
 button,
@@ -13,6 +21,8 @@ summary,
 textarea {
   touch-action: manipulation;
 }
+
+textarea, select, input, button { outline: none; }
 
 input,
 textarea,
