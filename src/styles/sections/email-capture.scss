@@ -1,12 +1,22 @@
 #shopify-section-email-capture .email-capture {
-  display: none;
   text-align: center;
   max-width: 750px;
   margin: 20px 0;
   .email-capture--success {
     display: none;
   }
-  &.success {
+  .error-message {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+  &[data-state="error"] {
+    .error-message {
+      display: block;
+    }
+  }
+  &[data-state=success] {
     .email-capture--success {
       display: block;
     }
@@ -15,6 +25,7 @@
     }
   }
   .email-capture--cta {
+    position: relative;
     h2 {
       margin-bottom: 48px;
     }
@@ -68,6 +79,7 @@
       color: $color-form;
     }
   }
+
 }
 
 

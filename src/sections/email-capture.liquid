@@ -1,18 +1,22 @@
 <div class="email-capture" data-section-id="{{ section.id }}" data-section-type="email-capture" data-enable-history-state="true">
 <div class="email-capture--cta">
-  <form action="https://www.getdrip.com/forms/532461030/submissions" method="post" data-drip-embedded-form="532461030">
-
-    <h2 data-drip-attribute="headline" class="headline-l small--hide">{{ section.settings.cta_headline_desktop }}</h2>
-    <h2 data-drip-attribute="headline" class="headline-l medium-up--hide">{{ section.settings.cta_headline_mobile }}</h2>
+  <form method="POST" action="//offhours.us16.list-manage.com/subscribe/post" novalidate="">
+    <h2 class="headline-l small--hide">{{ section.settings.cta_headline_desktop }}</h2>
+    <h2 class="headline-l medium-up--hide">{{ section.settings.cta_headline_mobile }}</h2>
     <hr>
-    <p data-drip-attribute="description" class="copy">{{ section.settings.cta_copy }}</p>
+    <p class="copy">{{ section.settings.cta_copy }}</p>
     <div class="email-capture--inputs">
-      <input class="email-capture--email" placeholder="{{ section.settings.placeholder }}" type="email" id="drip-email" name="fields[email]" value="" />
-      <button class="email-capture--submit" type="submit" data-drip-attribute="sign-up-button" >
+
+      <input type="hidden" name="u" value="9b505723b04c893cb674ad3da">
+      <input type="hidden" name="id" value="b1d1108c86">
+      <input class="email-capture--email" placeholder="{{ section.settings.placeholder }}" type="email" value="" name="EMAIL" id="mce-EMAIL" />
+      <button class="email-capture--submit" type="submit" >
         {% include 'submit-arrow' %}
       </button>
     </div>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9b505723b04c893cb674ad3da_b1d1108c86" tabindex="-1" value=""></div>
   </form>
+  <div class="copy error-message"><small>Please check the email address you entered.</small></div>
 
 </div>
 
