@@ -1,11 +1,3 @@
-@mixin flex() {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @mixin plain-list() {
   margin: 0;
   padding: 0;
@@ -46,25 +38,6 @@
     }
   }
 }
-
-@mixin placeholder() {
-  &::placeholder { /* Chrome/Opera/Safari */
-    @content;
-  }
-  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    @content;
-  }
-  &::-moz-placeholder { /* Firefox 19+ */
-    @content;
-  }
-  &:-ms-input-placeholder { /* IE 10+ */
-    @content;
-  }
-  &:-moz-placeholder { /* Firefox 18- */
-    @content;
-  }
-}
-
 
 /*================ Responsive Show/Hide Helper ================*/
 @mixin responsive-display-helper($breakpoint: '') {

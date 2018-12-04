@@ -64,10 +64,8 @@
     input, button {
       color: $color-form;
     }
-    input {
-      @include placeholder() {
-        color: $color-form;
-      }
+    input::placeholder {
+      color: $color-form;
     }
   }
 }

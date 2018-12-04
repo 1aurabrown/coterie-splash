@@ -24,14 +24,8 @@
       },
       {
         "type": "color",
-        "id": "color_arc_bg",
-        "label": "Left Background",
-        "default": "#FFF8E9"
-      },
-      {
-        "type": "color",
         "id": "color_main_bg",
-        "label": "Right Background",
+        "label": "Background",
         "default": "#FDF1D8"
       },
       {

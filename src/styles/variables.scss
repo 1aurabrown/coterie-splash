@@ -40,10 +40,10 @@ $transition-duration: 250ms;
 $transition-timing: ease-in-out;
 
 // Grid
-$grid-medium: 46.85em;
-$grid-large: 61.85em;
-$grid-widescreen: 87.5em;
-$grid-max-width: 73.75em;
+$grid-medium: 768px;
+$grid-large: 992px;
+$grid-widescreen: 1200px;
+$grid-max-width: 1500px;
 $grid-gutter: 30px;
 
 // Breakpoints used with the media-query mixin

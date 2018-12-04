@@ -2,7 +2,7 @@ footer {
   background: $color-footer;
   color: $color-icon;
   ul {
-    @include flex();
+    display: flex;
     @include plain-list();
     height: $footer-height-desktop;
     justify-content: center;
