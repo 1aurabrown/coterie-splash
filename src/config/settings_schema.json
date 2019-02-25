@@ -25,7 +25,13 @@
       {
         "type": "color",
         "id": "color_main_bg",
-        "label": "Background",
+        "label": "Main Background",
+        "default": "#FDF1D8"
+      },
+      {
+        "type": "color",
+        "id": "color_arc_bg",
+        "label": "Arc Background",
         "default": "#FDF1D8"
       },
       {
